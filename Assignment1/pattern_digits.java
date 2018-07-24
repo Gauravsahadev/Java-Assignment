@@ -1,0 +1,28 @@
+public class pattern_digits{
+		public static void printTriangle(int n)
+		{
+			int num;
+			int k=2*n-2;
+			for(int i=n;i>0;i--)
+			{
+
+				for(int j=k;j>0;j--)
+				{
+					System.out.print(" ");
+				}
+			k+=1;
+			num=6-i;
+			for(int j=i-1;j>=0;j--)
+			{
+				System.out.print(num+" ");
+				num+=1;
+			}
+			System.out.println();
+			}
+		}
+		public static void main(String args[])
+		{
+			int n=5;
+			printTriangle(n);
+		}
+}
